@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio Analyzer</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    textarea { width: 100%; height: 120px; }
+    pre { background: #f4f4f4; padding: 15px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+<h2>Portfolio Analyzer (LangGraph)</h2>
+
+<textarea id="portfolio">
+[
+  {"symbol":"INFY.NS","type":"stock","quantity":10},
+  {"symbol":"HDFCBANK.NS","type":"stock","quantity":20},
+  {"symbol":"ITC.NS","type":"stock","quantity":4}
+]
+</textarea>
+
+<textarea id="user_needs" placeholder="type anything you need to know">
+</textarea>
+
+
+
+<button onclick="analyze()">Analyze</button>
+
+<h3>Evaluation</h3>
+<pre id="evaluation"></pre>
+
+<h3>Allocation Plan</h3>
+<pre id="allocation"></pre>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
